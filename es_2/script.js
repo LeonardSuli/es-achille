@@ -17,4 +17,10 @@ const input = document.querySelector('input');
 function myFunction() {
 
     div.innerText = input.value
+
 }
+
+button.addEventListener('click', () => {
+
+    div.innerText = div.innerText.split('').reverse().join('')
+})
