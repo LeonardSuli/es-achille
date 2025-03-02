@@ -23,4 +23,5 @@ function myFunction() {
 button.addEventListener('click', () => {
 
     div.innerText = div.innerText.split('').reverse().join('')
+    input.value = input.value.split('').reverse().join('')
 })
