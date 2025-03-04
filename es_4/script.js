@@ -1,21 +1,29 @@
 let button = document.querySelector('button');
-let div = document.querySelector('div');
+let container = document.querySelector('.container');
 let output = document.querySelector('.output');
 
-div.style.display = 'none';
+container.style.display = 'none';
 
 button.addEventListener('click', () => {
 
+
     // compare il contenitore
-    div.style.display = 'block';
+    container.style.display = 'flex';
+
+
+    for (let i = 1; i < 11; i++) {
+        console.log(i)
+
+        let numRandom = Math.ceil(Math.random() * 10);
+
+        container.innerHTML += `<div class="output">${numRandom}</div>`;
+
+    }
 
     // i box resettano ogni volta che fai click
-    output.innerText = '';
+    // output.innerHTML = '';
 
-    // aggiunge una classe con dello stile
-    output.classList.add('nuova')
-
-    // aggiunge un numero random
-    output.innerText += Math.ceil(Math.random() * 10);
+    // // aggiunge un numero random
+    // output.innerText += Math.ceil(Math.random() * 10);
 
 })
