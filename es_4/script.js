@@ -13,7 +13,7 @@ button.addEventListener('click', () => {
     // i box resettano ogni volta che fai click e non raddoppiano
     container.innerHTML = '';
 
-    for (let i = 1; i < 11; i++) {
+    for (let i = 1; i < 101; i++) {
         // console.log(i)
 
         let numRandom = Math.ceil(Math.random() * 10);
